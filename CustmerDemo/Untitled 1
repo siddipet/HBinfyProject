@@ -1,0 +1,27 @@
+Step1: We need to create entity/pojo (customer class) class with annotation according to DB Table which is create in DB
+
+step2: We need to create Hibernate.cfg.xml
+
+step3:We need to create HibernateUtil.java which can load "Hibernate.cfg.xml"  and return SessionFactory
+
+step4: We need to create DAO Interface here we can add methods for crud operation and which need to overide in DAOImpl class
+
+step5: We need to create DAOImpl class here we can overide methods for crud operations which are there in DAO class.
+
+		And we can perform transaction like save /update/load/delete 
+
+step6: Finally we need to test the hibernate API by  creating customer object and passing the required values
+
+
+*******IMPS points*****
+
+-->The Inheritance or Subtype paradigm mismatch occurs because inheritance is not defined explicitly in any standardized RDBMS. Most of the RDBMS does not define anything similar to inheritance.
+
+-->In the relational model, the association between tables is represented using the primary key and foreign keys.
+
+-->The Association paradigm mismatch exists because Java represent associations (has-a relationship) using object references and in RDBMS association is by a foreign key column.
+		
+-->The Identity paradigm mismatch occurs because Java defines similarity using == and equals() whereas RDBMS uses a primary key.
+
+
+
